@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ee876d;
+    color: beige;
+    width: 80%;
+    height: 200px;
+}
+
+footer {
+    background-color: #4bf174;
+    color: beige;
+    width: 80%;
+    height: 200px;
+}
+
+main {
+    background-color: royalblue;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+body {
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.2rem;
+    color: #330000;
+    background-color: rgb(236, 236, 131);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-seccion {
+    font-weight: black;
+    margin-bottom: 3rem;
+    color: rgb(145, 145, 64);
+    text-transform: uppercase;
+    padding-bottom: 0.1vh;
+    font-weight: 1000;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+    width: 90%;
+    background-color: slateblue;
+}
+
+.nosotros-container img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.nosotros-container article {
+    width: 30%;
+    padding: 0.1vh;
+    flex: 1;
+    min-width: 30%;
+    margin: 5px;
+}
+
+.tittle-article {
+    text-align: left;
+    font-weight: bold;
+    color: rgb(116, 116, 43);
+}
+
+.text-article {
+    text-align: justify;
+}
+
+
+/*Linea dorada antes de cada sección */
+
+.contenedor-linea {
+    text-align: center;
+    position: relative;
+}
+
+.linea-vertical {
+    position: relative;
+    width: 0.1cm;
+    height: 2.5cm;
+    background-color: rgb(145, 145, 64);
+    text-align: center;
+    overflow: hidden;
+    left: 50%;
+}
+
+.brillo {
+    position: absolute;
+    top: -100%;
+    left: -150%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(48, 213, 200, 0.2), rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.2));
+    animation: shineEffect 5s infinite;
+}
+
+@keyframes shineEffect {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%;
+    }
+    100% {
+        left: -150%;
+    }
+}
+
+
+/*Fin linea dorada*/
+
+media(min-width: 600px) {
+    flex-direction: column;
+}
+
+
+}
+flex-direction: column;
+
+}
+lex-direction: column;
+
+}

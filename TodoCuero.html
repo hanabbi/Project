@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Cuero</title>
+
+    <!-- Otros elementos del head -->
+
+    <!--Library Swiper Carrousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/carousel-swiper.css">
+
+    <!--Google Fonts Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Mis estilos-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--Iconos Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!--Inicio Barra de Navegación-->
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#diseños">Diseños</a></li>
+                    <li><a href="#nosotros">Contactarnos</a></li>
+                    <li><a href="#">Ingresar</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Fin Barra de Navegación-->
+
+        <!--Inicio Carrousel Swiper-->
+        <img id="logo-principal" src="images/logo/origin.png" class="d-block w-100" alt="...">
+        <div class="swiper swiper-hero">
+
+            <!-- Additional required wrapper -->
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/carousel/ucaballo 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/ucampera camell 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nuestros diseños</h5>
+                        <p>Exaltan la Elegancia y Durabilidad. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/uazul 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>3 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/ucalzado hombree 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>4 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/carousel botas altas 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>5 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/ufaja 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>6 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/uinfinite 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>7 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/utienda 562x255.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Visítanos y descubre la diferencia.</h5>
+                        <p>#TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper(".swiper-hero", {
+                // Optional parameters
+                // slidesPerView: "auto",
+                // spaceBetween: 15,
+                // slidesPerGroupAuto: true,
+                slidesPerView: 1,
+                slidesPer: 8,
+                /*coverSlideContent: true,*/
+
+                direction: "horizontal",
+                loop: true,
+                // allowTouchMove: true,
+                effect: "fade",
+                autoplay: {
+                    /*delay: 50000,*/
+                    delay: 3000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    // type: "progressbar"
+                    clickable: true,
+                    // dynamicBullets: true
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //   el: ".swiper-scrollbar",
+                //   draggable: true,
+
+                // },
+            });
+        </script>
+        <!--Fin Carrousel Swiper-->
+    </header>
+
+    <main>
+        <!--Inicio Sección Nosotros-->
+        <div class="contenedor-linea" id="nosotros">
+            <div class="linea-vertical">
+                <div class="brillo"></div>
+            </div>
+            <h4 class="titulo-seccion" style="letter-spacing: 5px; ">Sobre nosotros</h4>
+        </div>
+
+        <section class="nosotros">
+            <article class="columna-texto">
+                <h2 class="titulo-section">Nuestra historia</h2>
+                <div>
+                    <h5>Todo Cuero: Una historia de pasión por el cuero que trasciende fronteras</h5>
+                    <p>
+                        <strong>Todo Cuero</strong> nace de la pasión por el cuero y el trabajo artesanal, una herencia transmitida de generación en generación. Nuestra historia comienza a principios del siglo XX, cuando un grupo de inmigrantes europeos,
+                        buscando nuevas oportunidades, se establecieron en Argentina. Atraídos por la riqueza natural del país y la calidad de su cuero, estos pioneros comenzaron a trabajar con este material noble, creando piezas únicas y duraderas.
+                    </p>
+                    <p>Con el tiempo, su dedicación y talento se tradujeron en un pequeño taller familiar que, con el paso de los años, se transformó en <strong>Todo Cuero</strong>, una empresa reconocida por su excelencia en el diseño y creación de calzado,
+                        abrigos, ropa, carteras y accesorios en cuero.</p>
+                    <p>Cada pieza es elaborada a mano por artesanos expertos que emplean técnicas tradicionales y modernas para crear productos únicos y duraderos.</p>
+                    <p>Seleccionamos cuidadosamente los mejores cueros argentinos y utilizamos materiales de primera calidad para garantizar la excelencia de nuestros productos.</p>
+                </div>
+            </article>
+            <article class="columna-imagen">
+                <img src="images/nosotros/foto nosotros00 670.jpg"> </article>
+            <article class="columna-texto">
+                <h2 class="titulo-section">Objetivos</h2>
+                <div>
+                    <p>Ser la marca líder en cuero a nivel mundial, reconocida por la calidad superior de nuestros productos, la elegancia de nuestros diseños y el compromiso con la sostenibilidad.</p>
+                    <p>Hoy, <strong>Todo Cuero</strong> exporta sus productos a todo el mundo, llevando la calidad y el prestigio del cuero argentino a cada rincón del planeta. Somos una empresa familiar que se enorgullece de su historia y tradición, y que
+                        está comprometida con seguir ofreciendo productos excepcionales a nuestros clientes.</p>
+                    <p>Nuestro equipo de diseñadores está en constante búsqueda de nuevas tendencias y estilos, creando piezas atemporales que reflejan la elegancia y el buen gusto.</p>
+                    <p>Nos comprometemos con prácticas de producción responsables que minimizan el impacto ambiental y promueven el uso de materiales sostenibles.</p>
+                    <p>Más que una marca, <strong>Todo Cuero</strong> es una filosofía de vida, una pasión por el cuero que se transmite en cada pieza que creamos.</strong>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!-- Fin Nosotros -->
+
+        <!--Inicio Sección Diseños y Creaciones-->
+        <div class="contenedor-linea" id="diseños">
+            <div class="linea-vertical">
+                <div class="brillo"></div>
+            </div>
+            <h4 class="titulo-seccion" style="letter-spacing: 5px; ">Nuestros diseños y creaciones</h4>
+
+            <div class="publicidad-contenedor">
+                <p class="publicidad-texto">
+                    <!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas
+                    te brindarán calidez, comodidad y un toque de sofisticación sin igual.
+
+                    <strong>Todo Cuero:</strong>Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad</p>-->
+            </div>
+        </div>
+
+        <section class="diseños-section">
+
+
+            <article class="diseño-item">
+                <a href="paginabase.html#abrigos"></a><img src="images/diseños/producto-abrigos.jpg" alt="Abrigos"></a>
+                <div class="contenido-item">
+                    <h2 class="subtitulo-seccion">Abrigos</h2>
+                    <p class="texto-seccion">Tenemos una amplia selección de abrigos elaborados con las pieles más finas y suaves del mercado. Desde clásicos abrigos largos hasta modernas chaquetas, nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin
+                        igual.
+                    </p>
+                </div>
+            </article>
+
+            <article class="diseño-item">
+                <img src="images/diseños/servicio-calzado.jpg" alt="Calzado ">
+                <div class="contenido-item">
+                    <h2 class="subtitulo-seccion">Calzado</h2>
+                    <p class="texto-seccion">Eleva tu pisada con el calzado de Todo Cuero. Botas, borceguíes, mocasines, sandalias y mucho más, elaborados con pieles de la más alta calidad y diseños que marcan tendencia.</p>
+                </div>
+            </article>
+
+            <article class="diseño-item ">
+                <img src="images/diseños/producto-bolsos.jpg " alt="Carteras ">
+                <div class="contenido-item">
+                    <h2 class="subtitulo-seccion">Carteras</h2>
+                    <p class="texto-seccion">Complementa tu look con las exclusivas carteras de <strong> Todo Cuero</strong>. Desde elegantes bolsos de mano hasta prácticas valijas de viaje, nuestras creaciones te acompañarán en cada aventura con estilo y funcionalidad.</p>
+                </div>
+            </article>
+
+            <article class="diseño-item ">
+                <img src="images/diseños/producto-accesorio.jpg" alt="Accesorios ">
+                <div class="contenido-item">
+                    <h2 class="subtitulo-seccion">Accesorios</h2>
+                    <p class="texto-seccion">Descubre una amplia gama de accesorios en <strong>Todo Cuero</strong> que complementarán tu estilo a la perfección. Alhajas en cuero, billeteras, cintos, guantes, contenedores diversos, elementos para escritorio y mucho más, piezas
+                        únicas que combinan funcionalidad y elegancia. </p>
+                </div>
+            </article>
+
+        </section>
+        <!-- Fin Diseños y creaciones -->
+
+        <!--Sección Contactarnos-->
+        <section>
+            <div class="contenedor-linea" id="contactarnos">
+                <div class="linea-vertical">
+                    <div class="brillo"></div>
+                </div>
+                <h4 class="titulo-seccion" style="letter-spacing: 5px; ">Contactarnos</h4>
+
+            </div>
+            <div class="section1-item">
+                <p>Suscríbete para recibir nuestras novedades</p>
+                <p>Para recibir promociones y las últimas novedades en tu correo electrónico</p>
+                <div class="news-container">
+                    <form action="# "> <label for="email ">Correo electrónico:</label>
+                        <input type="email " id="email " name="email " placeholder="Ingrese su correo electrónico " required>
+
+                        <button type="button " onclick="mostrarMensaje() ">Enviar</button> </form>
+
+                    <p id="mensaje "></p>
+                    <script src="js/index.js "></script>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo/logo-transparente-1.png " alt=" ">
+        </div>
+
+        <div>
+            <p>Av. Corrientes 1700, CABA, Buenos Aires, Argentina. </p>
+            <p>011 9 12 322568</p>
+            <p><a class="enlace" href=" # ">TodoCuero@TodoCuero.com.ar</a></p>
+        </div>
+
+        <div class="redes">
+
+            <ul class="redes-links ">
+                <li>
+                    <a href="# "><i class="fab fa-facebook-f fa-lg color-icono-awesome"></i>
+                        <!--img src="images/iconosredes/cfacebook1.png " alt="Facebook ">-->
+                    </a>
+                </li>
+                <li>
+                    <a href="# "><i class="fab fa-twitter fa-lg color-icono-awesome"></i>
+                        <!--<img src="images/iconosredes/ctwitter1.png " alt="Twitter ">-->
+                    </a>
+                </li>
+                <li>
+                    <a href="# "><i class="fab fa-linkedin-in fa-lg color-icono-awesome"></i>
+                        <!--<img src="images/iconosredes/clinkedin.png " alt="LinkedIn ">-->
+                    </a>
+                </li>
+                <li>
+                    <a href="# "><i class="fab fa-youtube fa-lg color-icono-awesome"></i>
+                        <!--<img src="images/iconosredes/cyoutube.png " alt="Youtube ">-->
+                    </a>
+                </li>
+                <li>
+                    <a href="# "><i class="fab fa-instagram fa-lg color-icono-awesome"></i>
+                        <!--<img src="images/iconosredes/cinstagram.png " alt="Instagram ">-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Copyright">
+            <p>Copyright © 2024 Todos los derechos reservados por Todo Cuero</p>
+            <p>Diseñado por <a class="enlace" href="#">Sota&Wagner</p>
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->
+<!--Diseños que Exaltan la Elegancia y Durabilidad. Descubre un mundo de posibilidades en Todo Cuero, donde la artesanía tradicional se fusiona con diseños modernos y vanguardistas para crear piezas únicas que resaltan tu estilo y personalidad. Nuestras piezas te brindarán calidez, comodidad y un toque de sofisticación sin igual. Todo Cuero:Tu universo de cuero donde la pasión por la artesanía se refleja en cada detalle. Visítanos y descubre la diferencia. #TodoCuero #DiseñosUnicos #Artesanía #Calidad #Elegancia #Durabilidad-->

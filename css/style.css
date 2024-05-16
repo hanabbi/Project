@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Google Fonts Roboto*/
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/*Fin fonts*/
+
+
+/*Inicio Barra Navegación*/
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.nav-container {
+    width: 100%;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    /* Distribución horizontal con espacio */
+    gap: 10px;
+}
+
+nav li {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(145, 145, 64);
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(145, 145, 64);
+    /*background-color: rgb(48, 15, 15);*/
+}
+
+nav li a:hover {
+    background-color: rgb(145, 145, 64);
+    color: #330000;
+}
+
+nav li a.visited {
+    color: #663300;
+}
+
+
+/*Fin Barra Navegación*/
+
+
+/*Logo principal*/
+
+#logo-principal {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
+    max-width: 248px;
+    height: auto;
+    padding: 10px;
+}
+
+#logo-principal {
+    max-width: 22%;
+    /* el logo no ocupará no más del 30% del carrousel. La imagen no será más ancha que la pantalla max-width: 100%;*/
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+}
+
+
+/* Pantallas grandes (más de 1024px) */
+
+@media (min-width: 1025px) {
+    #logo-principal {
+        width: 22%;
+        height: auto;
+        /* Altura original para pantallas grandes */
+    }
+}
+
+
+/* Pantallas medianas (entre 600px y 1024px) */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    #logo-principal {
+        width: 18%;
+        /* Ancho del 18% en pantallas medianas */
+        height: auto;
+        /* Altura auto para mantener la proporción */
+    }
+}
+
+
+/* Pantallas pequeñas (menos de 600px) */
+
+@media (max-width: 599px) {
+    #logo {
+        width: 10%;
+        /* Ancho del 10% en pantallas pequeñas */
+        height: auto;
+        /* Altura auto para mantener la proporción */
+    }
+}
+
+
+/*Fin logo-principal*/
+
+
+/*CSS Carrousel: carousel-swiper.css */
+
+
+/*Linea dorada antes de cada sección */
+
+.contenedor-linea {
+    text-align: center;
+    position: relative;
+}
+
+.linea-vertical {
+    position: relative;
+    width: 0.1cm;
+    height: 2.5cm;
+    background-color: rgb(145, 145, 64);
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.brillo {
+    position: absolute;
+    top: -100%;
+    left: -150%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(48, 213, 200, 0.2), rgba(48, 213, 200, 0.9), rgba(48, 213, 200, 0.2));
+    animation: shineEffect 5s infinite;
+}
+
+@keyframes shineEffect {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%;
+    }
+    100% {
+        left: -150%;
+    }
+}
+
+
+/*Fin linea dorada*/
+
+
+/*Sección Nosotros*/
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* Alinea los elementos verticalmente al inicio */
+    justify-content: space-around;
+    /* Distribuye el espacio entre los elementos */
+    width: 100%;
+    padding: 20px;
+}
+
+.columna-texto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #330000;
+    text-align: justify;
+    flex: 1;
+    /* Permite que las columnas crezcan para ocupar el espacio disponible */
+    padding: 20px;
+    /* Agrega espacio interno alrededor del texto */
+}
+
+.columna-texto h2 {
+    color: rgb(145, 145, 64);
+    margin-top: 0;
+    /* Elimina el margen superior predeterminado */
+    text-align: center;
+    /* Centra el título horizontalmente */
+}
+
+.nosotros-text h5 {
+    margin-top: 20px;
+    /* Agrega margen superior después del título principal */
+    font-weight: bold;
+    /* Hace que el texto sea más grueso */
+}
+
+.nosotros p {
+    margin-top: 10px;
+    /* Agrega margen superior después de los títulos */
+    text-align: justify;
+    /* Alinea el texto de forma justificada */
+    line-height: 1.6;
+    /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+}
+
+.columna-imagen {
+    flex: 1;
+    /* Permite que la columna crezca para ocupar el espacio disponible */
+    text-align: center;
+    /* Centra la imagen horizontalmente */
+}
+
+.columna-imagen img {
+    max-width: 100%;
+    /* Ajusta el ancho de la imagen al ancho de la columna */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+
+/* Estilos responsivos para pantallas más pequeñas (ej: tablets) */
+
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+    }
+    .columna-texto,
+    .columna-imagen {
+        flex: 1;
+        /* Permite que las columnas ocupen todo el ancho disponible */
+    }
+}
+
+
+/*secciones */
+
+.titulo-seccion {
+    position: relative;
+    /*esto es para que la linea se acomode como corresponde*/
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(145, 145, 64);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.subtitulo-seccion {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(145, 145, 64);
+}
+
+.texto-seccion {
+    color: #330000;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/*Diseños y creaciones */
+
+.diseños-section {
+    border: 0;
+}
+
+.publicidad-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: center;
+    /* Horizontally center the content */
+}
+
+.publicidad-texto {
+    width: 80%;
+    color: #330000;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.2;
+    /* Esto ajusta el interlineado */
+}
+
+.diseños-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.diseño-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.diseño-item:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* alinea a la derecha los impares del grid */
+    padding: 20px;
+}
+
+.diseño-item:nth-child(even) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* alinea a la izquierda los pares del grid */
+    padding: 20px;
+}
+
+.diseño-item img {
+    max-width: 30%;
+    /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+.diseño-item .contenido-item {
+    width: 60%;
+    /* Ajusta el ancho del contenido según sea necesario */
+    padding-left: 10px;
+    /* Espacio entre la imagen y el contenido */
+}
+
+.diseño-item .subtitulo-seccion {
+    margin-bottom: 5px;
+    /* Espacio entre el título y el texto */
+}
+
+
+/*arriba mi nosotros css*/
+
+.btn {
+    display: inline-block;
+    /* Display as an inline block */
+    font-weight: normal;
+    /* Default font weight */
+    text-align: center;
+    /* Center align text */
+    white-space: nowrap;
+    /* Don't wrap text */
+    vertical-align: middle;
+    /* Middle vertical alignment */
+    user-select: none;
+    /* Disable text selection */
+    border: 1px solid transparent;
+    /* Default border */
+    padding: 0.5rem 1rem;
+    /* Default padding */
+    cursor: pointer;
+    /* Set cursor to pointer on hover */
+    border-radius: 0.25rem;
+    /* Rounded corners */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    /* Transition effects */
+}
+
+.btn-secondary {
+    color: #fff;
+    /* Text color for secondary button */
+    background-color: #ccc;
+    /* Background color for secondary button */
+    border-color: #ccc;
+    /* Border color for secondary button */
+}
+
+
+/*Contactarnos Estilos */
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+.news-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0.2px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.footer-item {
+    width: 33.3%;
+    height: 140px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Footer Estilos*/
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: rgb(145, 145, 64) !important;
+    background-color: #330000;
+    justify-content: center;
+    line-height: 0.3em;
+    text-align: center;
+    padding: 5px;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    color: rgb(145, 145, 64);
+}
+
+
+/*Iconos a redes sociales*/
+
+.enlace {
+    color: rgb(145, 145, 64) !important;
+}
+
+.redes {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.redes-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.redes-links li {
+    margin-right: 3px;
+    justify-content: center;
+}
+
+.redes-links i {
+    width: 25px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.redes-links i:hover {
+    transform: scale(1.1);
+}
+
+.color-icono-awesome {
+    color: rgb(145, 145, 64);
+}
+
+.Copyright {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.6rem;
+}

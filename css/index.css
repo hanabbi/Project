@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    color: purple;
+    text-align: center;
+    min-height: 100%;
+    background-color: peru;
+}
+
+.header {
+    /*asigno area grid a este elemento*/
+    grid-area: header;
+    background-color: royalblue;
+}
+
+.nav {
+    /*asigno area grid a este elemento*/
+    grid-area: nav;
+    background-color: rgb(247, 170, 99);
+}
+
+.aside {
+    /*asigno area grid a este elemento grid-area: aside;*/
+    background-color: rgb(204, 83, 235);
+}
+
+.main {
+    /*asigno area grid a este elemento*/
+    grid-area: main;
+    background-color: rgb(65, 225, 100);
+}
+
+.section {
+    background-color: rgb(161, 65, 225);
+    margin-bottom: 10px;
+}
+
+.article {
+    background-color: rgb(235, 137, 205);
+    margin-bottom: 10px;
+}
+
+.footer {
+    /*asigno area grid a este elemento*/
+    background-color: rgb(114, 153, 160);
+    grid-area: footer;
+}
+
+
+/*PLANTILLA GRID*/
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around
+}
+
+.mi-img {
+    max-width: 200px;
+    height: auto;
+}
+
+.section2 {
+    display: grid;
+    grid-template-rows: 2;
+    /* 2 columnas de ancho uniforme */
+    gap: 10px;
+    justify-content: space-around;
+    /*alineación horizontal de los elementos*/
+    align-items: flex-start;
+    /*alineación vertical de los elementos*/
+    grid-template-areas: "article article" "article article";
+    grid-gap: 10px;
+}
+
+.article2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title-article {
+    font-weight: bold;
+    color: rgb(116, 116, 43);
+}
+
+.text-article {
+    color: #330000;
+    text-align: justify;
+}
+
+media(min-width: 600px) {
+    l;
+}

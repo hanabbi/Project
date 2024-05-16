@@ -1,0 +1,117 @@
+/*Carousel Swiper Personalizado*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.swiper-hero {
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1600px;
+    position: static;
+    z-index: 1;
+}
+
+.swiper-hero .swiper-slide {
+    width: 100%;
+}
+
+.swiper-hero img {
+    width: 100%;
+    height: 500px;
+}
+
+
+/*Punto de quiebre para pantallas grandes*/
+
+@media (min-width: 1024px) {
+    .swiper-hero img {}
+}
+
+
+/*Punto de quiebre para celulares*/
+
+@media (max-width: 768px) {
+    .swiper-hero img {
+        height: 255px;
+    }
+}
+
+
+/*Punto de quiebre para notebooks*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .swiper-hero img {}
+}
+
+.swiper-hero .swiper-button-prev,
+.swiper-hero .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    background-color: #222222;
+    height: 70px;
+    width: 50px;
+    margin-top: -35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.swiper-hero .swiper-button-prev {
+    border-radius: 0 65px 65px 0;
+    left: -10px;
+}
+
+.swiper-hero .swiper-button-next {
+    border-radius: 65px 0 0 65px;
+    right: -10px;
+}
+
+.swiper-hero:hover .swiper-button-prev,
+.swiper-hero:hover .swiper-button-next {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.swiper-hero .swiper-pagination {
+    --swiper-pagination-color: white;
+    --swiper-pagination-bullet-size: 6px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.25;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 2px;
+}
+
+.swiper-hero .swiper-pagination-bullet {
+    box-shadow: inset 0 0 0 1px #fff;
+}
+
+.swiper-hero .swiper-pagination-bullet-active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/*Cubierta Ahumada sobre el carousel*/
+
+.swiper-hero img {
+    position: relative;
+}
+
+.swiper-hero img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 22, 6, 0.7) !important;
+    z-index: 100000;
+    /*Ajusta la transparencia aquí background-color: rgba(128, 64, 32, 0.5); .swiper-hero img::after */
+}
+
+
+/*Ajusta la transparencia aquí background-color: rgba(128, 64, 32, 0.5);*/

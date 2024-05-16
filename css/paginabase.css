@@ -1,0 +1,286 @@
+    /*Estilos para páginas de Diseños*/
+    /*Roboto Fonts*/
+    
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+    
+    .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    
+    .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
+     :root {
+        --color-principal: #330000;
+        --color-secundario: beige;
+        /* Definición de variable */
+    }
+    
+    * {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /*Header*/
+    
+    body {
+        margin: 0;
+    }
+    
+    header {
+        padding: 30px;
+        background-color: var(--color-principal);
+        color: var(--color-secundario);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        /*  justify-content: ; Distribuye los elementos a los extremos */
+        align-items: center;
+        /* Alinea los elementos verticalmente */
+        box-sizing: content-box;
+        margin-bottom: 20px;
+    }
+    
+    header img {
+        flex: 0 0 auto;
+        margin-left: 10px;
+        box-sizing: content-box
+        /* flex: 0 0 auto; Permite que el logo ocupe el espacio disponible */
+    }
+    /*Inicio Nav*/
+    
+    .nav {
+        flex: 0 0 auto;
+        /* flex: 0 0 auto; Permite que el nav ocupe el espacio disponible */
+        margin-right: 10px;
+        margin-left: 10px;
+        box-sizing: content-box
+    }
+    /*inicio nav paginabase*/
+    
+    nav {
+        position: fixed;
+        background-color: transparent;
+        z-index: 1;
+        text-align: center;
+        align-content: center;
+        top: 20px;
+        right: 10px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        /* Distribución horizontal con espacio */
+        gap: 10px;
+    }
+    
+    nav li {
+        font-family: 'Roboto', sans-serif;
+        color: rgb(145, 145, 64);
+        font-size: 1rem;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: rgb(145, 145, 64);
+        /*background-color: rgb(48, 15, 15);*/
+    }
+    
+    nav li a:hover {
+        background-color: rgb(145, 145, 64);
+        color: #330000;
+    }
+    
+    nav li a.visited {
+        color: #663300;
+    }
+    /*Main*/
+    
+    main {
+        color: #330000;
+        background-color: white;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    /*Linea antes de cada sección */
+    
+    .contenedor-linea {
+        text-align: center;
+        position: relative;
+    }
+    
+    .linea-vertical {
+        width: 0.1cm;
+        height: 2.5cm;
+        background-color: rgb(145, 145, 64);
+        margin: 2px auto;
+        margin-bottom: 0;
+    }
+    /*Fin lineaa*/
+    /*Sección Estilos*/
+    
+    .titulo-seccion {
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: rgb(145, 145, 64);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 10px;
+        font-weight: 1000;
+        font-style: normal;
+    }
+    
+    .subtitulo-seccion {
+        font-size: 26px;
+        font-weight: bold;
+        color: rgb(145, 145, 64);
+    }
+    
+    .texto-seccion {
+        color: #330000;
+        line-height: 1.6;
+        font-size: 16px;
+        text-align: justify;
+    }
+    /*Footer*/
+    /* Footer Estilos*/
+    
+    footer {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 0.8rem;
+        color: rgb(145, 145, 64) !important;
+        background-color: #330000;
+        justify-content: center;
+        line-height: 0.3em;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    footer img {
+        width: 150px;
+        height: auto;
+    }
+    
+    footer {
+        color: rgb(145, 145, 64);
+    }
+    /*Iconos a redes sociales*/
+    
+    .enlace {
+        color: rgb(145, 145, 64) !important;
+    }
+    
+    .redes {
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .redes-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .redes-links li {
+        margin-right: 3px;
+        justify-content: center;
+    }
+    
+    .redes-links i {
+        width: 25px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .redes-links i:hover {
+        transform: scale(1.1);
+    }
+    
+    .color-icono-awesome {
+        color: rgb(145, 145, 64);
+    }
+    
+    .Copyright {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 0.6;
+    }
